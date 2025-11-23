@@ -1,0 +1,20 @@
+:root{
+  --brand-100: #0F1724;   /* texte principal */
+  --brand-80:  #123047;   /* header/footer */
+  --accent:    #FFB66E;   /* bouton primaire / accents */
+  --muted:     #F6F3EE;   /* fond général */
+  --card:      #FFFFFF;   /* cartes / surfaces */
+  --soft:      #C9D6DF;   /* bordures / éléments secondaires */
+}
+
+/* ✒️ Typographies à utiliser (Google Fonts)
+Titres (luxe)
+
+🎩 Playfair Display
+→ Serif élégante, parfaite pour un site premium.
+
+Texte normal
+
+📘 Inter
+→ Moderne, lisible, propre.
+*/
