@@ -1,20 +1,157 @@
 :root{
-  --brand-100: #0F1724;   /* texte principal */
-  --brand-80:  #123047;   /* header/footer */
-  --accent:    #FFB66E;   /* bouton primaire / accents */
-  --muted:     #F6F3EE;   /* fond général */
+  --text: #0F1724;   /* texte principal */
+  --headerFooter:  #123047;   /* header/footer */
+  --button:    #FFB66E;   /* bouton primaire / accents */
+  --background:     #F6F3EE;   /* fond général */
   --card:      #FFFFFF;   /* cartes / surfaces */
   --soft:      #C9D6DF;   /* bordures / éléments secondaires */
 }
+html, body {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background);
+  color: var(--text);
+  height: 100%;
+  width: 100%;
+  font-family: 'Inter', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+}
+/* ================= Header ================= */
+.header{
+  background-color: var(--headerFooter);
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 20px;
+  display: flex;
+}
+.logo{
+  width: 4rem;
+}
+/* ================= Navigation ================= */
+.nav{
+  flex: 1;
+  margin-left: 20px;
+}
+.nav ul{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.nav a{
+  display: block;
+  text-decoration: none;
+  color: var(--soft);
+  font-size: 1.5rem;
+}
+.nav a:hover{
+  color: var(--button);
+  transition: 0.2s;
+}
+@media (max-width: 768px){
+  .nav ul {
+    flex-direction: column; 
+    gap: 0.5rem;            
+    align-items: center;     
+  }
+    .nav a {
+    font-size: 1rem;      
+  }
+}
+/* ================= Hero ================= */
+.hero-image{
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+  filter: brightness(0.5);
+  z-index: 0;
+}
+.hero{
+  position: relative;
+}
+.hero-title{
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  transform: translate(-25%,-25%);
+  text-shadow: 1px 1px 5px var(--text);
+  color: var(--background);
+  z-index: 1;
+  max-width: 600px;
+}
+.hero-title h1{
+  font-size: 3rem;
+}
+.hero-title p{
+  font-size: 1.5rem;
+  color: var(--soft);
+}
+/* ================= Main ================= */
+.articles h2{
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 3rem
+}
+.articles-div{
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr;
+  margin: 0 10px;
+}
 
-/* ✒️ Typographies à utiliser (Google Fonts)
-Titres (luxe)
+@media (min-width: 768px){
+  .articles-div{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px){
+  .articles-div{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 
-🎩 Playfair Display
-→ Serif élégante, parfaite pour un site premium.
-
-Texte normal
-
-📘 Inter
-→ Moderne, lisible, propre.
-*/
+.articles-div h3{
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+.articles-div p{
+  padding: 5px 10px;
+  margin: 0px 25px; 
+}
+.articles-div .author{
+  text-align: right;
+  font-style: italic;
+}
+.articles article {
+  background: var(--card);
+  border-radius: 10px;
+  border: solid 1px var(--soft);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+/* ================= Footer ================= */
+.footer{
+  background-color: var(--headerFooter);
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  display: flex;
+  color: var(--soft);
+}
+.footer2 ul{
+  list-style: none;
+}
+.footer2 a{
+  text-decoration: none;
+  color: var(--soft);
+  display: block;
+}
+.footer2 a:hover{
+  color: var(--button);
+  transition: 0.2s;
+}
