@@ -1,0 +1,95 @@
+/* ================= Header ================= */
+
+/* ================= Navigation ================= */
+
+/* ----------------- Nav-top ----------------- */
+
+@media (max-width: 768px){
+    .nav-top ul {
+        flex-direction: column; 
+        gap: 0.5rem;            
+        align-items: center;
+        padding: 10px 0;
+        margin: 0 auto;
+    }
+    .header{
+        margin: 0px;
+        padding: 0px;
+    }
+
+}
+@media (max-width: 1024px){
+    .header img{
+        display: none;
+    }
+    .nav-top a {
+        font-size: 1rem;      
+    }
+}
+
+/* ----------------- Nav-bottom ----------------- */
+
+/* ================= Hero ================= */
+
+/* petit test */
+@media (min-width: 1024px){
+    .hero-title h1{
+        font-size: 4.5rem;
+    }
+    .hero-title p{
+        font-size: 2.5rem;
+    }
+}
+
+/* ================= Main ================= */
+
+@media (min-width: 768px){
+    .articles-div{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+    @media (min-width: 1024px){
+    .articles-div{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* ================= Footer ================= */
+
+@media (max-width: 768px) {
+    .footer p, .footer a{
+        font-size: 0.6rem;
+    }
+}
+
+/* ================= Form ================= */
+
+/* ================= Meet our dogs ================= */
+
+@media (max-width: 1024px) {
+    .dogs {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 768px) {
+    .dogs {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ================= Meet our team ================= */
+@media (max-width: 768px) {
+    .staff-card, .staff-card-reverse {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .staff-card-reverse {
+        direction: ltr;
+    }
+    .staff-card-reverse img, .staff-card img{
+    justify-self: center;
+    margin: 0;
+    }
+}
