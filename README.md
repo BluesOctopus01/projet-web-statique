@@ -54,7 +54,8 @@ projet/
 │ ├── style.css
 │ └── responsive.css
 ├── images/
-│ └── (images)
+│ └── images-recap/── 
+│ └── (images)      └──(images-recap)
 └── README.md
 ```
 
