@@ -135,7 +135,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .main-title{
   text-align: center;
-  font-size: 2rem;
+  font-size: 3rem;
+  margin-bottom: 80px;
 }
 .articles-div{
   display: grid;
@@ -320,9 +321,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .staff-card , .staff-card-reverse{
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 4fr;
   width: 90vw;  
-  padding: 20px;
+  padding: 40px 20px;
   background-color: var(--card);
   border-radius: 15px;
   box-shadow: 0 3px 10px rgba(0,0,0,0.1);
