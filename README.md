@@ -81,11 +81,11 @@ projet/
 
 ## Aperçu du site
 
-![Aperçu du site](images/images-recap/accueil.png)
-![Aperçu du site](images/images-recap/faq.png)
-![Aperçu du site](images/images-recap/qui.png)
-![Aperçu du site](images/images-recap/recontre.png)
-![Aperçu du site](images/images-recap/talent.png)
+![Aperçu de la page "accueil"](images/images-recap/accueil.png)
+![Aperçu de la page "Nos jeunes talents"](images/images-recap/talent.png)
+![Aperçu de la page "Qui sommes nous ?"](images/images-recap/qui.png)
+![Aperçu de la page "Rencontrez vos stars"](images/images-recap/recontre.png)
+![Aperçu de la page "FAQ"](images/images-recap/faq.png)
 
 ## Auteur
 
