@@ -43,6 +43,8 @@ h1, h2, h3, h4, h5, h6 {
   list-style: none;
   padding: 0;
   margin: 0;
+  gap: 2px;
+  padding: 5px 0px;
 }
 .nav-top a{
   display: block;
@@ -55,9 +57,6 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.2s;
 }
 @media (max-width: 768px){
-  .header img{
-    display: none;
-  }
   .nav-top ul {
     flex-direction: column; 
     gap: 0.5rem;            
@@ -71,6 +70,11 @@ h1, h2, h3, h4, h5, h6 {
   }
   .nav-top a {
   font-size: 1rem;      
+  }
+}
+@media (max-width: 1024px){
+  .header img{
+    display: none;
   }
 }
 /* ----------------- Nav-bottom ----------------- */
@@ -106,6 +110,7 @@ h1, h2, h3, h4, h5, h6 {
   object-fit: cover;
   filter: brightness(0.5);
   z-index: 0;
+  object-position: 50% 40%; 
 }
 .hero{
   position: relative;
@@ -262,7 +267,7 @@ h1, h2, h3, h4, h5, h6 {
   border: none;
   cursor: pointer;
   border:3px solid var(--button);
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 .button:hover {
   background-color: var(--card);
@@ -277,9 +282,10 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.2rem;
 }
 .meet-form input, .meet-form select{
-border: 1px solid var(--soft);
-border-radius: 8px;
-padding: 8px 12px;
+  border: 1px solid var(--soft);
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 1rem;
 }
 /* ================= Meet our dogs ================= */
 .dog-card{
@@ -295,6 +301,8 @@ padding: 8px 12px;
 }
 .dog-card img{
   width: 100%;
+  max-height: 300px;
+  object-fit: cover;
   border-radius: 15px;
 }
 .dogs{
@@ -393,4 +401,32 @@ padding: 8px 12px;
   .staff-card-reverse img, .staff-card img{
   justify-self: center;
   }
+}
+/* ================= Meet our team ================= */
+.FAQ-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 90vw;
+  margin: 30px auto;
+  gap: 30px;
+}
+.FAQ-card{
+  background-color: var(--card);
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  justify-content: center;
+  width: 80vw;
+  padding: 25px;
+
+}
+.FAQ-question{
+  font-size: 1.2rem;
+}
+.FAQ-answer{
+  color: var(--soft);
+}
+.FAQ-card li{
+  margin-bottom: 40px;
 }
