@@ -10,7 +10,7 @@
 <body>
     <header class="header">
         <img class="logo" src="./images/vecteezy_dog-and-cat-paw_22034594.png" alt="logo site le chow-chow des toutouts">
-        <nav class="nav">
+        <nav class="nav-top">
             <ul class="listeNav">
             <li><a href="index.html">Accueil</a></li>
             <li><a href="page2.html">Nos jeunes talents</a></li>
@@ -20,12 +20,41 @@
             </ul>
         </nav>
     </header>
-        <main>
-            <form>
-                <label for="">Nom</label>
-                <input type="text">
-            </form>
-        </main>
+
+    
+    <main class="meet-card">
+        <div class="intro-form">
+            <h3>Remplissez ce formulaire pour rencontrer vos stars</h3>
+            <p>Grâce à nos collaborateurs, l'opportunité de rencontrer vos stars canines ne dépend plus que de <strong>vous</strong>…<br> et de votre portefeuille !</p>
+        </div>
+        <form class="meet-form">
+            <label for="name">Votre nom :</label>
+            <input type="text" id="name" name="name" placeholder="Entrez votre nom" required>
+            
+            <label for="email">Email :</label>
+            <input type="text" id="email" name="email" placeholder="prenom@email.com" required>
+            
+            <label for="dog">Choisissez votre Idole :</label>
+            <select name="dog" id="dog" required>
+                <option value="">Séléctionnez un chien star</option>
+                <option value="Rex">Rex</option>
+                <option value="Max">Max</option>
+            </select>
+            
+            <label for="date">Date de la rencontre :</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="croquettes">Nombre de croquettes à payer :</label>
+            <input type="number" name="croquettes" id="croquettes" min="1" required>
+            
+            <label id="checkbox">
+                <input  type="checkbox" name="conditions" required>
+                J'accepte les conditions de réservation<br>et le paiement en croquettes.
+            </label>
+            <button type="submit">Réserver ma rencontre</button>
+        </form>
+    </main>
+
     <footer class="footer">
         <div class="footer1">
             <p class="contact">Contact : chowchow@mail.com | 0368 59 46 89</p>
