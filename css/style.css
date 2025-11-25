@@ -4,7 +4,7 @@
   --button:    #FFB66E;   /* bouton primaire / accents */
   --background:     #F6F3EE;   /* fond général */
   --card:      #FFFFFF;   /* cartes / surfaces */
-  --soft:      #C9D6DF;   /* bordures / éléments secondaires */
+  --soft:      #899095;   /* bordures / éléments secondaires */
 }
 html, body {
   font-size: 18px;
@@ -47,7 +47,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav-top a{
   display: block;
   text-decoration: none;
-  color: var(--soft);
+  color: var(--card);
   font-size: 1.3rem;
 }
 .nav-top a:hover{
@@ -156,7 +156,6 @@ h1, h2, h3, h4, h5, h6 {
 .articles article {
   background: var(--card);
   border-radius: 10px;
-  border: solid 1px var(--soft);
   box-shadow: 0 3px 10px rgba(0,0,0,0.1);
   padding: 25px 5px;
   margin-bottom: 15px;
@@ -168,7 +167,7 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: space-between;
   padding: 10px 20px;
   display: flex;
-  color: var(--soft);
+  color: var(--card);
 }
 .footer2 ul{
   list-style: none;
@@ -181,7 +180,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .footer2 a{
   text-decoration: none;
-  color: var(--soft);
+  color: var(--card);
   display: block;
 }
 .footer2 a:hover{
@@ -194,6 +193,12 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.meet-card p{
+  color: var(--soft);
+}
+.meet-card h3{
+  font-size: 1.8rem;
 }
 .intro-form{
   max-width: 500px;
@@ -221,6 +226,7 @@ h1, h2, h3, h4, h5, h6 {
   border: none;
   cursor: pointer;
   border:3px solid var(--button);
+  font-size: 1.2rem;
 }
 .button:hover {
   background-color: var(--card);
@@ -232,6 +238,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .meet-form label{
   font-weight: bolder;
+  font-size: 1.2rem;
 }
 .meet-form input, .meet-form select{
 border: 1px solid var(--soft);
@@ -265,6 +272,7 @@ padding: 8px 12px;
 }
 .dog-card p{
   font-size: 0.8rem;
+  color: var(--soft);
 }
 .dog-card .button{
   display: block;
@@ -279,5 +287,71 @@ padding: 8px 12px;
 @media (max-width: 768px) {
   .dogs {
     grid-template-columns: 1fr; /* 1 colonne sur mobile */
+  }
+}
+
+/* ================= Meet our team ================= */
+
+.team {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 80vw;
+  margin: 30px auto;
+  padding: 0 20px;
+  gap: 30px;
+}
+
+.staff-card , .staff-card-reverse{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  width: 100%;  
+  background-color: var(--card);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.staff-card img,.staff-card-reverse img{
+  width: 300px;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.staff-card-reverse {
+  display: grid;
+  direction: rtl;
+}
+
+.staff-info h4 ,.staff-card-reverse h4 {
+  margin: 0 auto;
+  font-size: 2rem;
+}
+.staff-info h5 ,.staff-card-reverse h5 {
+  margin: 0 auto;
+  font-size: 1.5rem;
+  color: var(--button);
+}
+.staff-info span{
+  font-style: italic;
+}
+.staff-info p {
+  margin: 10px 0;
+  color: var(--soft);
+}
+
+@media (max-width: 768px) {
+  .staff-card, .staff-card-reverse {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .staff-card-reverse {
+    direction: ltr;
+  }
+  .staff-card-reverse img, .staff-card img{
+  justify-self: center;
   }
 }
