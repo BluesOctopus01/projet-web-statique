@@ -2,7 +2,7 @@
 
 Ce projet a pour but de mettre en pratique les compétences acquises lors du cours d'introduction à HTML et
 CSS vu à l'IETC dans le cadre de mon bachelier en informatique de gestion.
-Il s'agit d'un **site web canin humoristique**. Une de press people pour les chiens
+Il s'agit d'un **site web canin humoristique** de press people pour les chiens
 
 ---
 
