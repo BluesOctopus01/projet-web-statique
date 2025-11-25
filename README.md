@@ -81,11 +81,11 @@ projet/
 
 ## Aperçu du site
 
-![Aperçu du site](images\images-recap\accueil.png)
-![Aperçu du site](images\images-recap\faq.png)
-![Aperçu du site](images\images-recap\qui.png)
-![Aperçu du site](images\images-recap\recontre.png)
-![Aperçu du site](images\images-recap\talent.png)
+![Aperçu du site](images/images-recap/accueil.png)
+![Aperçu du site](images/images-recap/faq.png)
+![Aperçu du site](images/images-recap/qui.png)
+![Aperçu du site](images/images-recap/recontre.png)
+![Aperçu du site](images/images-recap/talent.png)
 
 ## Auteur
 
