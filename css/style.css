@@ -48,7 +48,7 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   text-decoration: none;
   color: var(--soft);
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 .nav-top a:hover{
   color: var(--button);
@@ -188,7 +188,7 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--button);
   transition: 0.2s;
 }
-/* =================Form ================= */
+/* ================= Form ================= */
 .meet-card{
   display: flex;
   flex-direction: column;
@@ -204,14 +204,14 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 500px;
   display: flex;
   flex-direction: column;
-  margin: 15px;
+  margin-bottom: 25px;
   gap: 15px;
   padding: 50px;
   background-color: var(--card);
   box-shadow: 0 3px 10px rgba(0,0,0,0.1);
   border-radius: 15px;
 }
-.meet-form button{
+.button{
   background-color: var(--button);
   border-radius: 15px;
   padding: 20px ;
@@ -222,7 +222,7 @@ h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
   border:3px solid var(--button);
 }
-.meet-form button:hover {
+.button:hover {
   background-color: var(--card);
   color: var(--button);
   border:3px solid var(--button);
@@ -237,4 +237,47 @@ h1, h2, h3, h4, h5, h6 {
 border: 1px solid var(--soft);
 border-radius: 8px;
 padding: 8px 12px;
+}
+/* ================= Meet our dogs ================= */
+.dog-card{
+  background-color: var(--card);
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 25px;
+}
+.dog-card:hover{
+  transform: translateY(-5px);
+}
+.dog-card img{
+  width: 100%;
+  border-radius: 15px;
+}
+.dogs{
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3,1fr);
+  padding: 20px;
+}
+.dog-card h4{
+  font-size: 1.3rem;
+  margin: 0px;
+}
+.dog-card p{
+  font-size: 0.8rem;
+}
+.dog-card .button{
+  display: block;
+  text-decoration: none;
+}
+@media (max-width: 1024px) {
+  .dogs {
+    grid-template-columns: repeat(2, 1fr); /* 2 colonnes sur tablette */
+  }
+}
+
+@media (max-width: 768px) {
+  .dogs {
+    grid-template-columns: 1fr; /* 1 colonne sur mobile */
+  }
 }
