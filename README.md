@@ -12,7 +12,7 @@ Il s'agit d'un **site web canin humoristique**. Une de press people pour les chi
    - Minimum 5 pages HTML :
      - `index.html` : page d'accueil
      - `page2.html`, `page3.html`, `page4.html`, `page5.html` : pages thématiques
-   - Thème : p.
+   - Thème : site web canin humoristique 'people'.
 
 2. **Navigation**
    - Barre de navigation présente sur toutes les pages.
@@ -52,9 +52,9 @@ projet/
 ├── page5.html
 ├── css/
 │ ├── style.css
-│ └── responsive.css (optionnel)
+│ └── responsive.css
 ├── images/
-│ └── (vos images)
+│ └── (images)
 └── README.md
 ```
 
@@ -78,6 +78,10 @@ projet/
 3. Naviguer entre les pages pour découvrir le contenu humoristique.
 
 ---
+
+## Aperçu du site
+
+![Aperçu du site](images/screenshot-home.png)
 
 ## Auteur
 
